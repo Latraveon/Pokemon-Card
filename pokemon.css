@@ -1,0 +1,65 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e0f7fa; /* Light blue background */
+    font-family: 'Helvetica Neue', sans-serif; /* Sleek font */
+    margin: 0; /* Remove default margin */
+}
+
+.card {
+    background: linear-gradient(135deg, #ffffff 0%, #f9fbe7 100%); /* Gradient background */
+    border: 2px solid #ffcc00; /* Border color */
+    border-radius: 15px; /* More rounded edges */
+    width: 320px; /* Card width */
+    padding: 20px; /* Inner spacing */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15); /* Soft shadow effect */
+    position: relative; /* Relative positioning */
+    transition: transform 0.2s, box-shadow 0.2s; /* Smooth transition for hover effects */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Slightly scale up on hover */
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+.pokemon-name {
+    text-align: center;
+    font-size: 26px; /* Increased font size */
+    color: #ffcc00; /* Pokémon name color */
+    margin: 0 0 12px 0; /* Margin for spacing */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Subtle text shadow */
+}
+
+.pokemon-image {
+    width: 100%; /* Image width */
+    border-radius: 15px; /* Rounded image edges */
+    transition: transform 0.3s; /* Smooth transition for hover effect */
+}
+
+.pokemon-image:hover {
+    transform: scale(1.1); /* Slightly scale up image on hover */
+}
+
+.details {
+    text-align: left;
+    margin-top: 10px;
+}
+
+.type, .hp, .description, .move {
+    margin: 5px 0; /* Space between details */
+    font-size: 16px; /* Slightly larger font size */
+    color: #333; /* Darker text color for readability */
+}
+
+.type {
+    font-weight: bold; /* Bold for type */
+    color: #00796b; /* Teal color for type */
+}
+
+.moves {
+    margin-top: 10px; /* Space above moves */
+    font-style: italic; /* Italic for moves */
+}
+
